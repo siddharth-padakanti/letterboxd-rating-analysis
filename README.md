@@ -55,6 +55,9 @@ The dataset was originally exported ([ratings.csv](data\ratings.csv)) from Lette
 | `Runtime` | Movie duration in minutes |
 | `Average Rating` | Community average rating on Letterboxd |
 
+### Data Overview
+![Enriched Data Overview](images/enriched_overview.png)
+
 ---
 
 ## Key Findings
@@ -65,6 +68,36 @@ The dataset was originally exported ([ratings.csv](data\ratings.csv)) from Lette
 - **Genres I rate lowest:** TV Movies, Romance, and Action films.
 - **KMeans clustering did not produce clean groupings**, likely due to the sparse, binary nature of one-hot encoded genre data.
 - **The KNN recommender produced intuitive results** — similar movies were grouped correctly by genre and style.
+
+---
+
+## 📊 Visual Insights
+
+### Personal vs. Community Ratings
+
+![Ratings Comparison](images\Personal_vs_Average_Ratings.png)
+
+This plot shows a moderate relationship between my ratings and the community average, indicating partial alignment but clear personal bias.
+
+### Regression Fit
+![Regression Fit](<images/Linear Regression Fit of Personal vs Average Movie Ratings.png>)
+
+A simple linear model captures some correlation, but the variance suggests that personal taste is not fully explained by community trends.
+
+### Feature Influence
+![Feature Influence](<images/Feature Influence on Your Ratings.png>)
+
+Certain genres like Documentary and Music positively influence my ratings, while others like Romance and Action tend to score lower.
+
+### Runtime vs Rating
+![Runtime vs Rating](<images/Actual vs Predicted Ratings Based on Runtime.png>)
+
+Runtime has almost no predictive power, as ratings vary widely regardless of movie length.
+
+### Clustering Results
+![Clusters](<images/Movie Clusters Based on Taste.png>)
+
+K-Means clustering does not produce clear groupings, suggesting that my preferences are not easily separable into distinct categories.
 
 ---
 
