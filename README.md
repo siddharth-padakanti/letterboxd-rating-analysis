@@ -74,8 +74,7 @@ The dataset was originally exported ([ratings.csv](data\ratings.csv)) from Lette
 ## 📊 Visual Insights
 
 ### Personal vs. Community Ratings
-
-![Ratings Comparison](<images\Personal_vs_Average_Ratings.png>)
+![Personal vs Average Ratings](<images\Personal vs Average Ratings.png>)
 
 This plot shows a moderate relationship between my ratings and the community average, indicating partial alignment but clear personal bias.
 
